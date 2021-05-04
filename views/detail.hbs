@@ -1,3 +1,6 @@
-<p>{{ todo.name }}</p>
+<p>
+  <input type="checkbox" name="isDone" {{#if todo.isDone }} checked {{/if}} disabled>
+  {{ todo.name }}
+</p>
 <a href="/todos/{{ todo._id }}/edit">edit</a>
 <a href="/">back</a>
